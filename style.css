@@ -1,0 +1,117 @@
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+
+
+.base {
+    background-image: url('images/bg-pattern-desktop.svg');
+}
+.logo {
+    padding: 10px;
+}
+
+
+.mob-img {
+    visibility: hidden;
+    margin-top: 20px;
+}
+.img {
+    visibility: hidden;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 1000px) {
+    .mob-img{
+        visibility: visible;
+    }
+    .img {
+        visibility: hidden;
+    }
+}
+@media screen and (min-width: 1000px){
+    .img {
+        visibility: visible;
+    }
+    .mob-img {
+        visibility: hidden;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.text {
+    padding: 10px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: hsl(0, 93%, 68%);
+}
+.text .p1 {
+    color: black;
+    font-size: 50px;
+}
+.text .p2 {
+    font-size: 50px;
+}
+.form-controll input{
+    border: 2px solid #e7cece;
+    border-radius: 5px;
+    display: inline;
+    padding: 10px;
+    font-size: 14px;
+    width: 450px;
+    position: relative;
+}
+.form-controll button {
+    border: brown;
+    border-radius: 10px;
+    display: inline;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    background-color: hsl(0, 93%, 68%);
+    width: 50px;
+    margin-left: -10px;
+    position: absolute;
+}
+.form-controll  .fa-exclamation-circle {
+    visibility: hidden;
+    color: red;
+    position: absolute;
+    margin-left: -33px;
+    margin-top: 12px;
+    font-size: 20px;
+}
+.form-controll small {
+    visibility: hidden;
+    display: block;
+    margin-left: 10px;
+    margin-top: 5px;
+    color: red;
+}
+.form-controll.success input {
+    border-color: rgb(62, 212, 112);
+}
+.form-controll.error input {
+    border-color: rgb(228, 56, 25);
+}
+.form-controll.error  .fa-exclamation-circle{
+    color: red;
+    visibility: visible;
+}
+.form-controll.error small {
+    visibility: visible;
+}
